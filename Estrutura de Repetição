@@ -1,0 +1,180 @@
+Exemplo 1:
+
+
+
+{
+
+            int a;
+
+            digite();
+
+            a = int.Parse(Console.ReadLine());
+
+            dobro(a);
+
+            Console.WriteLine("\n\nPressione Alguma Tecla. ");
+
+            Console.ReadKey();
+
+        }
+
+                static void digite()
+
+        {
+
+            Console.Write("Digite um Numero: ");
+
+        }
+
+
+
+        static void dobro(int n)
+
+        {
+
+            int d = n * 2;
+
+            Console.WriteLine("Dobro de {0} = {1}", n, d);
+
+        }
+
+
+
+Exemplo 2:
+
+
+
+ {
+
+            int t;
+
+            string p;
+
+            digite();
+
+            p = Console.ReadLine();
+
+            t = tamanho(p);
+
+            Console.WriteLine("\n{0} Possui {1} caracteres ", p, t);
+
+            Console.WriteLine("\n\nPressione alguma tecla. ");
+
+            Console.ReadKey();
+
+        }
+
+        static void digite()
+
+        {
+
+            Console.Write("Digite uma Palavra: ");
+
+        }
+
+        static int tamanho (string x)
+
+        {
+
+            return x.Length;
+
+        }
+
+
+
+Exemplo 3:
+
+
+
+
+
+   {
+
+            int idade1, idade2;
+
+            string nome1, nome2;
+
+
+
+            Console.Write("Digite o nome da 1 pessoa: "); nome1 = Console.ReadLine();
+
+            Console.Write("\nDigite a idade da 1 pessoa: "); idade1 = int.Parse(Console.ReadLine());
+
+
+
+            Console.Write("Digite o nome da 2 pessoa: "); nome2 = Console.ReadLine();
+
+            Console.Write("\nDigite a idade da 2 pessoa: "); idade2 = int.Parse(Console.ReadLine());
+
+
+
+            string texto = PessoaMaisVelha(nome1, idade1, nome2, idade2);
+
+
+
+            Console.WriteLine("\n" + texto);
+
+            Console.WriteLine("\n\nPressione Alguma tecla. ");
+
+            Console.ReadKey();
+
+        }
+
+        static string PessoaMaisVelha(string n1, int id1, string n2, int id2)
+
+        {
+
+            if (id1 > id2)
+
+                return n1 + "頡 pessoa mais velha. ";
+
+            else
+
+                if (id2 > id1)
+
+                return n2 + "頡 pessoa mais velha. ";
+
+            else
+
+                return n1 + " e " + n2 + "tem a mesma idade.";
+
+        }
+
+
+
+Exemplo 4:
+
+
+
+    {
+
+            int num;
+
+            Console.Write("Entre com um Numero: ");
+
+            num = int.Parse(Console.ReadLine());
+
+
+
+            if (RestoPorDois(num) == 0)
+
+                Console.WriteLine("\n\nO Numero 頰ar.\n");
+
+            else
+
+                Console.WriteLine("\n\nO Numero 頩mpar. \n");
+
+
+
+            Console.ReadKey();
+
+        }
+
+        static int RestoPorDois(int a)
+
+        {
+
+            return a % 2;
+
+        }
+
